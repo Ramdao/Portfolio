@@ -245,6 +245,7 @@ h2{
   background: rgba(255, 255, 255, 0.1); 
   border-radius: 10px; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
 }
 
 .project-container:hover {
@@ -254,7 +255,7 @@ h2{
 
 
 .project-container img{
-  width: 500px;
+  width: 425px;
   
 }
 
@@ -265,17 +266,21 @@ h2{
 }
 
 .project-text{
+  font-size: 16px;
   margin-left: 15px;
+  margin-right: 20x;
   line-height: 1.5rem;
 }
 
 .project-skill{
+  
   display: flex;
   gap: 10px;
   margin-left: 15px;
 }
 
 .project-skill p {
+  font-size: 15px;
   background: rgba(235, 132, 29, 0.3);
   border-radius: 5px;
   padding: 10px 20px;
