@@ -341,3 +341,106 @@ h2{
   border-radius: 1rem; 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .typewriter {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+
+  .title-info {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .about-text {
+    font-size: 18px;
+    padding: 20px;
+    line-height: 2rem;
+  }
+
+  .skills {
+    flex-wrap: wrap;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .skill-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-title,
+  .project-text,
+  .project-skill {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .project-text {
+    font-size: 14px;
+  }
+
+  .project-skill p {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .github-container .contact-links {
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 3rem;
+  }
+
+  .contact-me {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .contact-background {
+    margin-top: 20rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .title-Container {
+    margin-top: 6rem;
+  }
+
+  .typewriter {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  .topNav {
+    display: none; /* already added, keeping this */
+  }
+
+  .about-text {
+    font-size: 16px;
+    padding: 16px;
+  }
+
+  .project-title {
+    font-size: 22px;
+  }
+
+  .project-text {
+    font-size: 13px;
+  }
+}
