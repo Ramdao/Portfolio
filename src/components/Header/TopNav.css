@@ -1,0 +1,39 @@
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    margin-right: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .topNav {
+      flex-wrap: wrap;
+      padding: 0.5rem 1rem;
+    }
+  
+    .topNav p {
+      font-size: 18px;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .navLinks {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      padding: 0.5rem 1rem;
+    }
+  
+    .navLinks.active {
+      display: flex;
+    }
+  
+    .navLinks a {
+      margin: 0.5rem 0;
+      font-size: 18px;
+    }
+  }
+  
