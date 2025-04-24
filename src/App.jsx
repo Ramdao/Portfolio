@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { useMediaQuery } from 'react-responsive';
 import TopNav from "./components/Header/TopNav";
 import Title from "./components/Header/Title";
 import Button from "./components/Button";
@@ -7,6 +8,8 @@ import Card from "./components/Card";
 import Skills from "./components/Skills";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
+import MoonCanvas from "./components/MoonCanvas"
+import MeteorCanvas from "./components/MeteorCanvas";
 
 function AnimatedSection({ children, initialX = 0, initialY = 0, sectionRef }) {
   const animationRef = useRef(null);
@@ -32,6 +35,7 @@ function App() {
   const skillsRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   const scrollToSection = (section) => {
     const targetRef =
@@ -52,13 +56,43 @@ function App() {
 
   return (
     <>
+     <MeteorCanvas />
       {/* Top Navigation */}
       <TopNav scrollToSection={scrollToSection} />
 
       {/* Title Section */}
       <AnimatedSection initialX={-100}>
-        <Title />
-      </AnimatedSection>
+  <div
+    style={{
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "space-between",
+      flexWrap: "wrap",
+      gap: "2rem",
+      position: "relative", 
+    }}
+  >
+    <div style={{ flex: 1 }}>
+      <Title />
+    </div>
+
+  
+    <div
+      style={{
+        position: "absolute", 
+        top: isMobile ? "32rem" : "10rem",
+        right: isMobile ? "2rem" : "3rem",
+        width: "40vw",
+        height: "40vw",
+        maxWidth: "350px",
+        maxHeight: "350px",
+        transform: "translate(-5rem, 5rem)",  
+      }}
+    >
+      <MoonCanvas />
+    </div>
+  </div>
+</AnimatedSection>
 
       {/* Buttons */}
       <AnimatedSection initialY={50}>

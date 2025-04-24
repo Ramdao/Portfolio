@@ -8,6 +8,7 @@
   
   @media (max-width: 768px) {
     .topNav {
+      width: 89%;
       flex-wrap: wrap;
       padding: 0.5rem 1rem;
     }
