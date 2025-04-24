@@ -36,6 +36,8 @@ function App() {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const meteorRef = useRef(null);
+  const isMeteorVisible = useInView(meteorRef, { margin: "50px", triggerOnce: false });
 
   const scrollToSection = (section) => {
     const targetRef =
@@ -50,16 +52,17 @@ function App() {
         : null;
 
     if (targetRef?.current) {
-      targetRef.current.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "nearest" });
+      targetRef.current.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
     }
   };
 
   return (
     <>
-     <MeteorCanvas />
-      {/* Top Navigation */}
-      <TopNav scrollToSection={scrollToSection} />
+      <div ref={meteorRef} style={{ height: "1px", width: "100%", position: "absolute", top: 0 }} />
+      {isMeteorVisible && <MeteorCanvas />}
 
+      {/* Top Navigation */}   
+      <TopNav scrollToSection={scrollToSection} />
       {/* Title Section */}
       <AnimatedSection initialX={-100}>
   <div
