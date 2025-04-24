@@ -34,7 +34,13 @@ export default function Skills() {
           }}
           transition={{ duration: 1 }}
         >
-          <img src={conceptItem.image} alt={conceptItem.skills} className="skill-icon" />
+          {/* Image with fallback logic */}
+          <img
+            src={conceptItem.image}
+            alt={conceptItem.skills}
+            className="skill-icon"
+            onError={(e) => e.target.style.display = "none"} // Hide image on error
+          />
           <span>{conceptItem.skills}</span>
         </motion.div>
       ))}
