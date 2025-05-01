@@ -21,6 +21,7 @@ html {
   min-height: 100rem;
   color: white;
   overflow-x: hidden;
+  zoom:1.0;
 }
 
 
@@ -48,7 +49,7 @@ button:hover{
   display: flex;
   padding-left: 1rem;
   padding-right: 1rem;
-  width: 95vw;
+  width: 96vw;
   border-style: solid;
   border-color: white;
   border-width: 1px;
@@ -153,6 +154,7 @@ h2{
   margin-left: 10px;
   font-size: 18px;
   line-height: 1.7;
+  width: 60vw;
 }
 /* About */
 
@@ -344,6 +346,7 @@ h2{
 }
 
 @media (max-width: 768px) {
+  
   h1 {
     font-size: 32px;
   }
@@ -354,9 +357,13 @@ h2{
   }
 
   .title-info {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.4;
+    margin-left: 1rem;
+    width: 95vw;
   }
+
+ 
 
   .about-text {
     font-size: 18px;
@@ -396,6 +403,12 @@ h2{
     font-size: 14px;
   }
 
+  .project-skill {
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+
   .project-skill p {
     font-size: 12px;
     padding: 8px 12px;
@@ -416,6 +429,7 @@ h2{
     margin-top: 20rem;
     padding: 1rem;
   }
+
 }
 
 
@@ -425,13 +439,15 @@ h2{
     margin-top: 6rem;
   }
 
+ 
+
   .typewriter {
     font-size: 18px;
     letter-spacing: 2px;
   }
 
   .topNav {
-    display: none; /* already added, keeping this */
+    display: none; 
   }
 
   .about-text {

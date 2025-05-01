@@ -47,8 +47,8 @@ export default function Title() {
         </h2>
       </div>
       <p className="title-info">
-        I am an enthusiastic programmer and web developer, passionate about bringing my <br />
-        creations to life on the screen. My goal is to design and build user-friendly, visually <br />
+        I am an enthusiastic programmer and web developer, passionate about bringing my 
+        creations to life on the screen. My goal is to design and build user-friendly, visually
         appealing websites that effectively showcase clients' ideas and markets.
       </p>
     </>
