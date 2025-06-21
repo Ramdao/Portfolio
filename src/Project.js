@@ -1,4 +1,11 @@
 export const PROJECTS = [
+     {
+        image: "/images/Capstone.png",
+        link: "https://palegreen-ibis-721862.hostingersite.com",
+        title: "Capstone Project",
+        text: " A 3D clothing web app, that provides 3D outfit suggestions based on client's preference. A client can ask A stylist to make a 3D model, or ask AI to generate colors for existing 3D models based on client's prompt. ",
+        skills: ["JavaScript", "React", "Laravel", "PHP", "Firebase"]
+    },
     {
         image: "/images/walmart.png",
         link: "https://ai-recipe-generator-search-1.onrender.com",
@@ -49,6 +56,12 @@ export const PROJECTS = [
         text: "Add your memories in a Timecapsule. You can add a memory by creating a timline and adding a entry to it. Within the entry you can add description,location and images. You can perform CRUD operations on the entries and timelines.",
         skills: ["CSHTML", "CSS", "JavaScript", "ASP.NET", "C#"] 
     },
- 
+    {
+        image: "/images/hackhaton.png",
+        link: "https://www.reddit.com/r/technicallyMemegame/",
+        title: "Hackathon Meme Game",
+        text: " Hackathon/ Hack Reddit 2025. A collaboration with 1 other person. A game where you vote for the best meme. Get a score best on the votes you put in vs the most popular vote ",
+        skills: ["Typescript", "React", "Redis", "Devvit"]
+    }
    
 ];

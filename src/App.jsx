@@ -84,12 +84,12 @@ function App() {
       style={{
         position: "absolute", 
         top: isMobile ? "32rem" : "10rem",
-        right: isMobile ? "2rem" : "3rem",
+        right: isMobile ? "8.5rem" : "3rem",
         width: "40vw",
         height: "40vw",
         maxWidth: "350px",
         maxHeight: "350px",
-        transform: "translate(-5rem, 5rem)",  
+        transform: "translate(1.5rem, 5rem)",  
       }}
     >
       <MoonCanvas />
