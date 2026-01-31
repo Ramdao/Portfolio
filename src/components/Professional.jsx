@@ -1,11 +1,13 @@
-import { PROJECTS } from "../Project"; 
+
+import {PROFESSIONAL} from "../Project"
 
 
-export default function Project() {
+
+export default function Professional() {
     return (
-        
-        <div className="projects-container">
-            {PROJECTS.map((project, index) => (
+      
+         <div className="projects-container">
+            {PROFESSIONAL.map((project, index) => (
                 <div 
                     key={index}
                     className="project-container" 
@@ -25,6 +27,6 @@ export default function Project() {
                 </div>
             ))}
         </div>
-      
+    
     );
 }

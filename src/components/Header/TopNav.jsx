@@ -20,6 +20,7 @@ export default function TopNav({ scrollToSection }) {
         <a onClick={() => scrollToSection("about")}>About</a>
         <a onClick={() => scrollToSection("skills")}>Skills</a>
         <a onClick={() => scrollToSection("projects")}>Projects</a>
+        <a onClick={() => scrollToSection("professional")}>Professional</a>
         <a onClick={() => scrollToSection("contact")}>Contact</a>
         <a
           href="https://drive.google.com/file/d/15d1j7rblKCJGsYbVwWiFIJTfw86qym96/view?usp=sharing"

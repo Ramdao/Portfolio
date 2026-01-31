@@ -10,6 +10,7 @@ import Project from "./components/Project";
 import Contact from "./components/Contact";
 import MoonCanvas from "./components/MoonCanvas"
 import MeteorCanvas from "./components/MeteorCanvas";
+import Professional from "./components/Professional";
 
 function AnimatedSection({ children, initialX = 0, initialY = 0, sectionRef }) {
   const animationRef = useRef(null);
@@ -34,6 +35,7 @@ function App() {
   const aboutRef = useRef(null);
   const skillsRef = useRef(null);
   const projectsRef = useRef(null);
+  const professionalRef = useRef(null);
   const contactRef = useRef(null);
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const meteorRef = useRef(null);
@@ -45,6 +47,8 @@ function App() {
         ? aboutRef
         : section === "skills"
         ? skillsRef
+        : section === "professional"
+        ? professionalRef
         : section === "projects"
         ? projectsRef
         : section === "contact"
@@ -116,6 +120,13 @@ function App() {
       <AnimatedSection initialX={-100} sectionRef={skillsRef}>
         <Card title="Skills">
           <Skills />
+        </Card>
+      </AnimatedSection>
+
+       {/* Job work Section */}
+      <AnimatedSection initialX={-100} sectionRef={professionalRef}>
+        <Card title="Professional work">
+          <Professional />
         </Card>
       </AnimatedSection>
 
