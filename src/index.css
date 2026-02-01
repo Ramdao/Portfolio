@@ -1,8 +1,8 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet');
 
 *{
-  font-family: "Roboto", serif;
+  font-family: "Space Grotesk", sans-serif;
   
 }
 
@@ -252,7 +252,7 @@ h2{
 }
 
 .project-container:hover {
-  transform: scale(1.05); 
+  transform: scale(0.97); 
   box-shadow: 0 0 20px #eb841d;
 }
 
@@ -338,7 +338,7 @@ h2{
 }
 
 .contact-background {
-  margin-top: 40rem;
+  margin-top: 30rem;
   background-color: rgba(255, 255, 255, 0.3); 
   padding: 2rem; 
   border-radius: 1rem; 

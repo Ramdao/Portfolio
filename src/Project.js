@@ -70,8 +70,8 @@ export const PROJECTS = [
 
 export const PROFESSIONAL = [
     {   image: "/images/zenrin.png",
-        link: "https://palegreen-ibis-721862.hostingersite.com",
-        title: "Zenrin",
-        text: " Making maps ",
+        link: "https://zenrin-customer-viewer.bjitgroup.com:3002/zgmdiff/login",
+        title: "Zenrin Map Viewer",
+        text: " Developed a map-based interface that displays various datasets such as public transportation routes, bus stops, and other location-based information. The data is provided by Zenrin Co., Ltd. I work as a Frontend Developer on this project, collaborating with a cross-functional team consisting of a Lead Frontend Developer, a Backend Developer, a Designer, and an Infrastructure Engineer responsible for deployment and server management.",
         skills: ["React", "JavaSrcipt"]}
 ];

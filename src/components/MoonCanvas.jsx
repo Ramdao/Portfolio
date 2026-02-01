@@ -2,6 +2,7 @@
 import React, { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, useTexture } from "@react-three/drei";
+import { useMediaQuery } from "react-responsive";
 
 function Moon() {
   const ref = useRef();
@@ -31,8 +32,19 @@ function Moon() {
 }
 
 export default function MoonCanvas() {
+  const isMobile = useMediaQuery({ query: "(max-width: 1000px)" });
+
+  const size = isMobile ? 300 : 350;
+
   return (
-    <Canvas style={{ width: "40vw", height: "40vw", maxWidth: 350, maxHeight: 350 }}>
+    <Canvas 
+      style={{ 
+        width: "40vw", 
+        height: "40vw", 
+        maxWidth: size, 
+        maxHeight: size 
+      }}
+    >
       <ambientLight intensity={1} />
       <directionalLight position={[3, 2, 5]} intensity={1} />
       <Moon />

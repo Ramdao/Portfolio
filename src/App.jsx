@@ -37,7 +37,8 @@ function App() {
   const projectsRef = useRef(null);
   const professionalRef = useRef(null);
   const contactRef = useRef(null);
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 1000px)" });
+  const isMassiveScreen = useMediaQuery({query:"(min-width: 1400px)"})
   const meteorRef = useRef(null);
   const isMeteorVisible = useInView(meteorRef, { margin: "50px", triggerOnce: false });
 
@@ -108,20 +109,31 @@ function App() {
         <Button href="https://www.linkedin.com/in/tashrif-radin-ali-a54b6b252/">LinkedIn</Button>
       </AnimatedSection>
 
-      {/* About Me Section */}
-      <AnimatedSection initialX={-100} sectionRef={aboutRef}>
-        <Card
-          title="About Me"
-          text="I believe in creating user-friendly web applications that focus on ease of use, appeal, and scalability. I specialize in front-end and back-end development, working with technologies like HTML, CSS, JavaScript, and frameworks like React, ASP.NET, Node.js, and others. Beyond coding, I enjoy solving complex problems and staying updated with the latest web technologies."
-        />
-      </AnimatedSection>
+      {/* About + Skills */}
+<AnimatedSection initialX={-100}>
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: isMassiveScreen ? "1fr 1fr" : "1fr",
+      gap: "2rem",
+      alignItems: "start",
+    }}
+  >
+    <div ref={aboutRef}>
+      <Card
+        title="About Me"
+        text="I believe in creating user-friendly web applications that focus on ease of use, appeal, and scalability. I specialize in front-end and back-end development, working with technologies like HTML, CSS, JavaScript, and frameworks like React, ASP.NET, Node.js, and others. Beyond coding, I enjoy solving complex problems and staying updated with the latest web technologies."
+      />
+    </div>
 
-      {/* Skills Section */}
-      <AnimatedSection initialX={-100} sectionRef={skillsRef}>
-        <Card title="Skills">
-          <Skills />
-        </Card>
-      </AnimatedSection>
+    <div ref={skillsRef}>
+      <Card title="Skills">
+        <Skills />
+      </Card>
+    </div>
+  </div>
+</AnimatedSection>
+
 
        {/* Job work Section */}
       <AnimatedSection initialX={-100} sectionRef={professionalRef}>
