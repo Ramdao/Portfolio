@@ -38,7 +38,7 @@ function App() {
   const professionalRef = useRef(null);
   const contactRef = useRef(null);
   const isMobile = useMediaQuery({ query: "(max-width: 1000px)" });
-  const isMassiveScreen = useMediaQuery({query:"(min-width: 1400px)"})
+  const isMassiveScreen = useMediaQuery({query:"(min-width: 1600px)"})
   const meteorRef = useRef(null);
   const isMeteorVisible = useInView(meteorRef, { margin: "50px", triggerOnce: false });
 
